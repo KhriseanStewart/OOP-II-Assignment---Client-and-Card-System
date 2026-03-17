@@ -1,9 +1,5 @@
 package realm;
 
-/**
- * Card class per UML: cardNumber, balance, pin, status.
- * Default and overloaded constructors, getters/setters, display().
- */
 public class Card {
 
     private int cardNumber;
@@ -11,7 +7,6 @@ public class Card {
     private int pin;
     private boolean status;
 
-    /** Default constructor. */
     public Card() {
         this.cardNumber = 0;
         this.balance = 0.0;
@@ -19,7 +14,6 @@ public class Card {
         this.status = false;
     }
 
-    /** Overloaded constructor: cardNumber, balance, pin, status. */
     public Card(int cardNumber, double balance, int pin, boolean status) {
         this.cardNumber = cardNumber;
         this.balance = balance;
@@ -59,7 +53,6 @@ public class Card {
         this.status = status;
     }
 
-    /** Display card details. */
     public void display() {
         System.out.println("Card Number: " + cardNumber);
         System.out.println("Balance: " + balance);

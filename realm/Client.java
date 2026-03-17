@@ -1,9 +1,5 @@
 package realm;
 
-/**
- * Client class per UML: idNumber, firstName, lastName, age, card (Has A Card).
- * Default and overloaded constructors, getters/setters, display().
- */
 public class Client {
 
     private int idNumber;
@@ -12,7 +8,6 @@ public class Client {
     private int age;
     private Card card;
 
-    /** Default constructor. */
     public Client() {
         this.idNumber = 0;
         this.firstName = "";
@@ -21,7 +16,6 @@ public class Client {
         this.card = null;
     }
 
-    /** Overloaded constructor: idNumber, firstName, lastName. */
     public Client(int idNumber, String firstName, String lastName) {
         this.idNumber = idNumber;
         this.firstName = firstName;
@@ -70,7 +64,6 @@ public class Client {
         this.card = card;
     }
 
-    /** Display client details and card information if present. */
     public void display() {
         System.out.println("--- Client ---");
         System.out.println("ID Number: " + idNumber);
